@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neon Ember Arena</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #070312; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; font-family: system-ui, sans-serif; }
+  #wrap { width: min(960px, 100vw); }
+  canvas { display: block; width: 100%; height: auto; background: #070312; cursor: crosshair; }
+  p { color: #9aa7c7; text-align: center; font-size: 13px; margin: 8px 0 0; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="960" height="600"></canvas>
+  <p>Neon Ember Arena — WASD move, mouse aim, click / Space shoot, P pause, M mute. Survive 10 waves.</p>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
